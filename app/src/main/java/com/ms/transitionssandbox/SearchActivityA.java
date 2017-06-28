@@ -29,12 +29,12 @@ public class SearchActivityA extends AppCompatActivity {
 	}
 
 	private void setupAnimations() {
-		Transition enterTransition = TransitionInflater.from(this).inflateTransition(R.transition.search_a_enter_transition);
+		Transition enterTransition = TransitionInflater.from(this)
+			.inflateTransition(R.transition.search_a_enter_transition);
 		getWindow().setEnterTransition(enterTransition);
 
 		ChangeBounds changeBoundsTransition = new ChangeBounds();
 		changeBoundsTransition.setDuration(getResources().getInteger(R.integer.anim_duration_medium));
 		getWindow().setSharedElementEnterTransition(changeBoundsTransition);
 	}
-
 }

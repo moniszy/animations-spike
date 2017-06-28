@@ -1,6 +1,5 @@
 package com.ms.transitionssandbox;
 
-
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.transition.Transition;
@@ -16,7 +15,8 @@ public class SearchActivityB extends AppCompatActivity {
 	}
 
 	private void setupAnimations() {
-		Transition enterTransition = TransitionInflater.from(this).inflateTransition(R.transition.search_b_enter_transition);
+		Transition enterTransition = TransitionInflater.from(this)
+			.inflateTransition(R.transition.search_b_enter_transition);
 		getWindow().setEnterTransition(enterTransition);
 	}
 }
