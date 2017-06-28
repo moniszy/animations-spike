@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="elevation_header">4dp</dimen>
+    <dimen name="spacing_normal">8dp</dimen>
+
+    <dimen name="cardview_border_radius">3dp</dimen>
+    <dimen name="default_search_card_height">58dp</dimen>
+    <dimen name="search_form_top_margin">10dp</dimen>
+
+    <integer name="anim_duration_very_long">1500</integer>
+    <integer name="anim_duration_long">500</integer>
+    <integer name="anim_duration_medium">300</integer>
+
+</resources>

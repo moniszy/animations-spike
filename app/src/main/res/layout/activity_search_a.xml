@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ms.transitionssandbox.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/AppTheme.TextAppearance.Title"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="@dimen/elevation_header">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/AppTheme.TextAppearance.Title.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|start"
+            android:text="@string/app_name" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/search_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="@dimen/search_form_top_margin"
+        android:clipToPadding="false"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/destination_card"
+            style="@style/MaterialCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            app:cardUseCompatPadding="true"
+            android:transitionName="@string/search_bar_transition">
+
+            <TextView
+                android:id="@+id/destination_text"
+                style="@style/MaterialCardTextView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_search_card_height"
+                android:text="@string/destination"/>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            style="@style/MaterialCardView"
+            android:id="@+id/dates_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:id="@+id/dates"
+                style="@style/MaterialCardTextView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_search_card_height"
+                android:text="Jul 15 - Jul 16 (1 night)" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            style="@style/MaterialCardView"
+            android:id="@+id/guests_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:id="@+id/guests"
+                style="@style/MaterialCardTextView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_search_card_height"
+                android:text="2 Guests" />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>
